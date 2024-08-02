@@ -1,21 +1,28 @@
 /******************************************************************************
 
-Actividad Lenguajes de Programacion 1
+Actividad 2 Lenguajes de Programacion 1
 
-***************************/
+*******************************************************************************/
 #include <iostream>
-#include <stdio.h>
 
-int main()
-{
-    int edad;
-    std::cout <<"Ingrese su edad: ";
-    std::cin >> edad;
+int main() {
+    float numero1, numero2;
+    
+    std::cout << "Escribe el primer número: ";
+    std::cin >> numero1; 
+    
+    std::cout << "Escribe el segundo número: ";
+    std::cin >> numero2;
+    
+    float suma = numero1 + numero2; 
+    float resta = numero1 - numero2; 
+    float multiplicacion = numero1 * numero2; 
+    float division = numero1 / numero2; 
+    
+    std::cout << " La suma es: " << suma << std::endl; 
+    std::cout << " La resta es: " << resta << std::endl; 
+    std::cout << " La multiplicacion es: " << multiplicacion << std::endl; 
+    std::cout << " La division es: " << division << std::endl; 
 
-    if (edad >=18) {
-        std::cout << "usted es mayor de edad." <<std::endl;
-    } else {
-        std::cout << "usted es menor de edad." <<std::endl;
-    }
     return 0;
 }
